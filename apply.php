@@ -9,7 +9,7 @@ if (!$dbconn) {
     $error_message = "Database connection failed: " . mysqli_connect_error();
     $jobs = [];
 } else {    
-    $query = "SELECT * FROM eoi WHERE status='Open' ORDER BY reference";
+    $query = "SELECT * FROM eoi WHERE status='New' ORDER BY JobReferenceNumber";
     $result = mysqli_query($dbconn, $query);
     if ($result) {
         $jobs = mysqli_fetch_all($result, MYSQLI_ASSOC);
