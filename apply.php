@@ -4,30 +4,20 @@
     
     require_once 'settings.php';
     
+   $dbconn = mysqli_connect($host, $username, $password, $database);
+if (!$dbconn) {
+    $error_message = "Database connection failed: " . mysqli_connect_error();
     $jobs = [];
-    try {
-        $conn = new mysqli($servername, $username, $db_password);
-        if ($conn->connect_error) {
-            throw new Exception("Connection failed: " . $conn->connect_error);
-        }
-        
-        $conn->query("CREATE DATABASE IF NOT EXISTS $database");
-        $conn->select_db($database);
-        
-        $result = $conn->query("SELECT reference, title FROM jobs WHERE status = 'Open' ORDER BY reference");
-        if ($result) {
-            $jobs = $result->fetch_all(MYSQLI_ASSOC);
-        }
-        $conn->close();
-    } catch (Exception $e) {
-
-        $jobs = [
-            ['reference' => 'NX7D2', 'title' => 'Data Scientist'],
-            ['reference' => 'NX5C8', 'title' => 'Cloud Infrastructure Architect'],
-            ['reference' => 'NX4S3', 'title' => 'Cybersecurity Analyst'],
-            ['reference' => 'NX6P1', 'title' => 'Digital Delivery Lead']
-        ];
+} else {
+    $query = "SELECT * FROM eoi WHERE status='Open' ORDER BY reference";
+    $result = mysqli_query($dbconn, $query);
+    if ($result) {
+        $jobs = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    } else {
+        $error_message = "Error retrieving job listings: " . mysqli_error($dbconn);
+        $jobs = [];
     }
+
 ?>
 <?php include 'header.inc'; ?>
 
