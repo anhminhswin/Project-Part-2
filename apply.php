@@ -8,7 +8,7 @@
 if (!$dbconn) {
     $error_message = "Database connection failed: " . mysqli_connect_error();
     $jobs = [];
-} else {
+} else {    
     $query = "SELECT * FROM eoi WHERE status='Open' ORDER BY reference";
     $result = mysqli_query($dbconn, $query);
     if ($result) {
@@ -17,6 +17,7 @@ if (!$dbconn) {
         $error_message = "Error retrieving job listings: " . mysqli_error($dbconn);
         $jobs = [];
     }
+}
 
 ?>
 <?php include 'header.inc'; ?>
