@@ -1,4 +1,6 @@
 <?php
+ $currentPage = 'process_eoi';
+    $pageTitle = 'Nexora IT Solutions | Empowering Tomorrow\'s Technology';
 include 'header.inc';
 
 require_once 'settings.php'; 
