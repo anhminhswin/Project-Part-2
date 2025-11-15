@@ -74,25 +74,7 @@ if (!$conn) {
     die("<p>Database connection failure: " . mysqli_connect_error() . "</p>");
 }
 
-$create_table_query = "
-CREATE TABLE IF NOT EXISTS eoi (
-    EOInumber INT AUTO_INCREMENT PRIMARY KEY,
-    JobReferenceNumber VARCHAR(10) NOT NULL,
-    FirstName VARCHAR(50) NOT NULL,
-    LastName VARCHAR(50) NOT NULL,
-    StreetAddress VARCHAR(100) NOT NULL,
-    SuburbTown VARCHAR(50) NOT NULL,
-    State VARCHAR(30) NOT NULL,
-    Postcode CHAR(4) NOT NULL,
-    Email VARCHAR(100) NOT NULL,
-    Phone VARCHAR(15) NOT NULL,
-    Skill1 VARCHAR(50),
-    Skill2 VARCHAR(50),
-    Skill3 VARCHAR(50),
-    Skill4 VARCHAR(50),
-    OtherSkills TEXT,
-    Status ENUM('New', 'Current', 'Final') DEFAULT 'New'
-)";
+
 mysqli_query($conn, $create_table_query);
 
 $insert_query = "INSERT INTO eoi 
