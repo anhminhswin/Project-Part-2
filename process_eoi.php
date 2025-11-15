@@ -78,8 +78,6 @@ if (!$conn) {
 }
 
 
-mysqli_query($conn, $create_table_query);
-
 $insert_query = "INSERT INTO eoi 
     (JobReferenceNumber, FirstName, LastName, StreetAddress, SuburbTown, State, Postcode,
      Email, Phone, Skill1, Skill2, Skill3, Skill4, OtherSkills)
