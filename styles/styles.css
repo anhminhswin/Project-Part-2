@@ -452,6 +452,60 @@ tr:hover {
     margin-bottom: var(--spacing-sm);
 }
 
+/* === MEMBER CONTRIBUTIONS TABLE === */
+.contributions-table {
+    width: 100%;
+    margin: var(--spacing-lg) 0;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contributions-table thead th {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--spacing-md);
+    text-align: left;
+    font-weight: 600;
+    border: 1px solid #ddd;
+}
+
+.contributions-table tbody th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    padding: var(--spacing-md);
+    text-align: center;
+    vertical-align: middle;
+    width: 180px;
+    border: 1px solid #ddd;
+    color: var(--dark-color);
+}
+
+.contributions-table tbody td {
+    padding: var(--spacing-md);
+    text-align: left;
+    border: 1px solid #ddd;
+    background-color: white;
+}
+
+.contributions-table tbody td:first-of-type {
+    font-weight: 600;
+    width: 200px;
+    background-color: #f0f7ff;
+}
+
+.contributions-table ul {
+    margin: 0;
+    padding-left: var(--spacing-md);
+}
+
+.contributions-table li {
+    margin-bottom: 0.5rem;
+}
+
+.contributions-table tr:hover td {
+    background-color: #f8f9fa;
+}
+
 /* === ENHANCEMENT PAGE STYLES === */
 .enhancement-card {
     margin-bottom: var(--spacing-xl);
