@@ -1,12 +1,22 @@
 <?php
-$host = "localhost";
-$username = "root";
-$password = "";
-$database = "nexora_db"; 
+/**
+ * Database connection settings
+ * This file contains the database connection variables for the Nexora IT Solutions project
+ */
 
-$conn = mysqli_connect($host, $username, $password, $database);
+// Database connection parameters
+$host = "localhost";        // Database host (XAMPP default)
+$user = "root";            // Database username (XAMPP default)  
+$password = "";            // Database password (XAMPP default is empty, but might be 'root' or set by user)
+$dbname = "nexora_db";     // Database name for the project
 
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+// Create connection string for MySQLi
+$servername = $host;
+$username = $user;
+$db_password = $password;
+$database = $dbname;
+
+// Alternative PDO connection variables if needed
+$dsn = "mysql:host=$host;dbname=$dbname;charset=utf8mb4";
+
 ?>
