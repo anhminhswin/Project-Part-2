@@ -17,7 +17,15 @@ if (!$dbconn) {
         $error_message = "Error retrieving job listings: " . mysqli_error($dbconn);
         $jobs = [];
     }
-}
+    $conn->close();
+    } catch (Exception $e) {
+        $jobs = [
+            ['reference' => 'NX7D2', 'title' => 'Data Scientist'],
+            ['reference' => 'NX5C8', 'title' => 'Cloud Infrastructure Architect'],
+            ['reference' => 'NX4S3', 'title' => 'Cybersecurity Analyst'],
+            ['reference' => 'NX6P1', 'title' => 'Digital Delivery Lead']
+        ];
+    }
 
 ?>
 <?php include 'header.inc'; ?>
