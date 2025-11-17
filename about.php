@@ -54,7 +54,7 @@
                         <ul>
                             <li>EOI table with auto-incrementing primary key and status tracking</li>
                             <li>Jobs table for dynamic job listing management</li>
-                            <li>Managers table with secure password hashing for authentication</li>
+                             <li>Implemented data sanitization and validation for all user inputs</li>
                             <li>Proper data types and constraints for data integrity</li>
                         </ul>
                         <strong>Server-Side Development:</strong>
