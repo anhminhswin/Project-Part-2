@@ -452,6 +452,97 @@ tr:hover {
     margin-bottom: var(--spacing-sm);
 }
 
+/* === ENHANCEMENT PAGE STYLES === */
+.enhancement-card {
+    margin-bottom: var(--spacing-xl);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-sm);
+    background: white;
+}
+
+.enhancement-card h3 {
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.enhancement-card ul {
+    margin: var(--spacing-md) 0;
+    padding-left: var(--spacing-xl);
+}
+
+.enhancement-card li {
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.7;
+}
+
+.enhancement-card code {
+    background: var(--light-color);
+    padding: 2px 6px;
+    border-radius: var(--border-radius-sm);
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    color: var(--dark-color);
+}
+
+.info-box {
+    background: var(--light-color);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-md);
+    margin: var(--spacing-lg) 0;
+    border-left: 4px solid var(--primary-color);
+}
+
+.success-box {
+    background: #e6ffe6;
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-md);
+    border: 1px solid #99cc99;
+    margin: var(--spacing-lg) 0;
+}
+
+.note-box {
+    background: #f0f0f0;
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-md);
+    margin: var(--spacing-lg) 0;
+}
+
+.enhancement-card.security {
+    border-left: 4px solid #00C2FF;
+}
+
+.enhancement-card.content {
+    border-left: 4px solid #009688;
+}
+
+.enhancement-card.management {
+    border-left: 4px solid #2E2E2E;
+}
+
+.enhancement-card.ux {
+    border-left: 4px solid #ff6b6b;
+}
+
+.enhancement-card.validation {
+    border-left: 4px solid #9b59b6;
+}
+
+.enhancement-card.assignment {
+    border-left: 4px solid #ff6b6b;
+}
+
+.action-links {
+    margin-top: var(--spacing-xl);
+    text-align: center;
+}
+
+.action-links .btn {
+    margin: 0 var(--spacing-sm);
+}
+
+
 /* === ASIDE/SIDEBAR === */
 .jobs-aside {
     background: var(--light-color);

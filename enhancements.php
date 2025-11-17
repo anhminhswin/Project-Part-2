@@ -17,10 +17,11 @@ include 'header.inc';
                 <h1>Project Enhancements</h1>
                 <p>This page documents the additional features and enhancements implemented beyond the basic assignment requirements for COS10026 Project Part 2.</p>
 
-                <div style="background: #f8f9fa; padding: 20px; border-radius: 5px; margin: 20px 0;">
+                <div class="info-box">
                     <h2>Enhancement Categories Implemented</h2>
+                </div>
                     
-                    <article style="margin-bottom: 30px; padding: 15px; border-left: 4px solid #00C2FF;">
+                    <article class="enhancement-card security">
                         <h3>1. Advanced Security Features</h3>
                         <p><strong>What was implemented:</strong></p>
                         <ul>
@@ -39,7 +40,7 @@ include 'header.inc';
                         </ul>
                     </article>
 
-                    <article style="margin-bottom: 30px; padding: 15px; border-left: 4px solid #009688;">
+                    <article class="enhancement-card content">
                         <h3>2. Dynamic Content Management</h3>
                         <p><strong>What was implemented:</strong></p>
                         <ul>
@@ -57,7 +58,7 @@ include 'header.inc';
                         </ul>
                     </article>
 
-                    <article style="margin-bottom: 30px; padding: 15px; border-left: 4px solid #2E2E2E;">
+                    <article class="enhancement-card management">
                         <h3>3. Advanced HR Management Features</h3>
                         <p><strong>What was implemented:</strong></p>
                         <ul>
@@ -77,7 +78,7 @@ include 'header.inc';
                         </ul>
                     </article>
 
-                    <article style="margin-bottom: 30px; padding: 15px; border-left: 4px solid #ff6b6b;">
+                    <article class="enhancement-card ux">
                         <h3>4. Enhanced User Experience</h3>
                         <p><strong>What was implemented:</strong></p>
                         <ul>
@@ -97,7 +98,7 @@ include 'header.inc';
                         </ul>
                     </article>
 
-                    <article style="margin-bottom: 30px; padding: 15px; border-left: 4px solid #9b59b6;">
+                    <article class="enhancement-card validation">
                         <h3>5. Advanced Validation and Data Integrity</h3>
                         <p><strong>What was implemented:</strong></p>
                         <ul>
@@ -118,7 +119,7 @@ include 'header.inc';
                         </ul>
                     </article>
 
-                    <article style="margin-bottom: 30px; padding: 15px; border-left: 4px solid #ff6b6b;">
+                    <article class="enhancement-card assignment">
                         <h3>6. Assignment-Specific Enhancement: "Other Skills Not Empty If Checkbox Selected"</h3>
                         <p><strong>What was implemented:</strong></p>
                         <ul>
@@ -146,7 +147,7 @@ include 'header.inc';
                     </article>
                 </div>
 
-                <div style="background: #e6ffe6; padding: 20px; border-radius: 5px; border: 1px solid #99cc99;">
+                <div class="success-box">
                     <h2>Implementation Summary</h2>
                     <p>These enhancements demonstrate advanced web development practices including:</p>
                     <ul>
@@ -160,7 +161,7 @@ include 'header.inc';
                     <p><strong>Total Enhancement Value:</strong> These features go significantly beyond the basic requirements and demonstrate production-ready web development skills suitable for enterprise applications.</p>
                 </div>
 
-                <div style="margin-top: 30px; padding: 20px; background: #f0f0f0; border-radius: 5px;">
+                <div class="note-box">
                     <h2>Technical Implementation Notes</h2>
                     <ul>
                         <li><strong>Security:</strong> All passwords use PHP's <code>password_hash()</code> and <code>password_verify()</code> functions</li>
@@ -171,10 +172,10 @@ include 'header.inc';
                     </ul>
                 </div>
 
-                <p style="margin-top: 30px; text-align: center;">
-                    <a href="index.php" style="background: #00C2FF; color: white; padding: 10px 20px; text-decoration: none; border-radius: 3px;">← Return to Home</a>
-                    <a href="manage.php" style="background: #009688; color: white; padding: 10px 20px; text-decoration: none; border-radius: 3px; margin-left: 10px;">HR Management System →</a>
-                </p>
+                <div class="action-links">
+                    <a href="index.php" class="btn primary-btn">← Return to Home</a>
+                    <a href="manage.php" class="btn" style="background: var(--secondary-color);">HR Management System →</a>
+                </div>
             </div>
         </section>
     </main>
