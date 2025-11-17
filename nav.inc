@@ -7,9 +7,11 @@
             </div>
             <div class="menu-links">
                 <a <?= ($currentPage === 'index') ? 'class="active"' : ''; ?> href="index.php">Home</a>
-                <a <?= ($currentPage === 'jobs') ? 'class="active"' : ''; ?> href="jobs.php">Job Descriptions</a>
-                <a <?= ($currentPage === 'apply') ? 'class="active"' : ''; ?> href="apply.php">Job Application</a>
+                <a <?= ($currentPage === 'jobs') ? 'class="active"' : ''; ?> href="jobs.php">Jobs</a>
+                <a <?= ($currentPage === 'apply') ? 'class="active"' : ''; ?> href="apply.php">Apply</a>
                 <a <?= ($currentPage === 'about') ? 'class="active"' : ''; ?> href="about.php">About</a>
+                <a <?= ($currentPage === 'manage') ? 'class="active"' : ''; ?> href="manage.php">HR System</a>
+                <a <?= ($currentPage === 'enhancements') ? 'class="active"' : ''; ?> href="enhancements.php">Enhancements</a>
             </div>
         </div>
     </nav>
